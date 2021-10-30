@@ -1,0 +1,311 @@
+{\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Calibri;}{\f1\fnil\fcharset0 Cambria;}{\f2\fnil Consolas;}{\f3\fnil\fcharset0 Verdana;}{\f4\fnil\fcharset0 Consolas;}{\f5\fnil\fcharset2 Symbol;}}
+{\colortbl ;\red0\green176\blue80;\red155\green0\blue211;\red255\green0\blue0;\red127\green0\blue85;\red0\green0\blue0;\red0\green0\blue192;\red106\green62\blue62;\red42\green0\blue255;\red212\green212\blue212;\red63\green127\blue95;\red255\green255\blue255;}
+{\*\generator Riched20 10.0.19041}\viewkind4\uc1 
+\pard\sa160\sl240\slmult1\cf1\b\f0\fs22\lang9 Java Assignments \b0 :\cf0\par
+\cf2\b\f1\fs28 Classes : \cf0\par
+
+\pard\sa200\sl240\slmult1\cf3\b0\fs24 Create student class having stdID , stdName, stdClass and display the information of two objects\par
+\cf4\b\f2\fs20 package\cf5\b0  com.sonata1;\cf0\par
+\cf4\b public\cf5\b0  \cf4\b class\cf5\b0  Student \{\cf0\par
+\cf5\tab\cf4\b int\cf5\b0  \cf6 Studid\cf5 ;\cf0\par
+\cf5\tab String \cf6 studName\cf5 ;\cf0\par
+\cf5\tab\cf4\b int\cf5\b0  \cf6 StudClass\cf5 ;\cf0\par
+\cf5\tab Student()\{\}\cf0\par
+\cf5\tab Student(\cf4\b int\cf5\b0  \cf7 a\cf5 , String \cf7 s\cf5 , \cf4\b int\cf5\b0  \cf7 c\cf5 )\{\cf0\par
+\cf5\tab\tab\cf4\b this\cf5\b0 .\cf6 Studid\cf5  = \cf7 a\cf5 ;\cf0\par
+\cf5\tab\tab\cf4\b this\cf5\b0 .\cf6 studName\cf5  = \cf7 s\cf5 ;\cf0\par
+\cf5\tab\tab\cf4\b this\cf5\b0 .\cf6 StudClass\cf5  = \cf7 c\cf5 ;\cf0\par
+\cf5\tab\}\cf0\par
+\cf5\tab\cf4\b public\cf5\b0  \cf4\b void\cf5\b0  display() \{\cf0\par
+\cf5\tab\tab System.\cf6\b\i out\cf5\b0\i0 .println(\cf8 "Name is: "\cf5 + \cf6 studName\cf5 );\cf0\par
+\cf5\tab\tab System.\cf6\b\i out\cf5\b0\i0 .println(\cf8 "Id is: "\cf5 + \cf6 Studid\cf5 );\cf0\par
+\cf5\tab\tab System.\cf6\b\i out\cf5\b0\i0 .println(\cf8 "Student Class is: "\cf5 +\cf6 StudClass\cf5 );\cf0\par
+\cf5\tab\}\cf0\par
+\cf5\tab\cf4\b public\cf5\b0  \cf4\b static\cf5\b0  \cf4\b void\cf5\b0  main(String[]\cf7 args\cf5 ) \{\cf0\par
+\cf5\tab\tab Student \cf7 e2\cf5  = \cf4\b new\cf5\b0  Student(11,\cf8 "ram"\cf5 , 8);\cf0\par
+\cf5\tab\tab\cf7 e2\cf5 .display();\tab\cf0\par
+\cf5\tab\tab Student \cf7 e1\cf5  = \cf4\b new\cf5\b0  Student();\cf0\par
+\cf5\tab\tab\cf7 e1\cf5 .\cf6 Studid\cf5  = 121;\cf0\par
+\cf5\tab\tab\cf7 e1\cf5 .\cf6 studName\cf5  = \cf8 "Bheem"\cf5 ;\cf0\par
+\cf5\tab\tab\cf7 e1\cf5 .\cf6 StudClass\cf5  = 6;\cf0\par
+\cf5\tab\tab\cf7 e1\cf5 .display();\tab\cf0\par
+\cf5\tab\}\cf0\par
+\cf5\}\par
+
+\pard\sa200\sl276\slmult1\cf3\f1\fs24 Create a product class The properties are ProID, ProName, ProPrice display the information and ProPrice will be added additional tax of GST .\par
+\cf4\b\f2\fs20 package\cf5\b0  com.sonata1;\cf0\par
+\cf4\b public\cf5\b0  \cf4\b class\cf5\b0  Product \{\cf0\par
+\cf5\tab\cf4\b int\cf5\b0  \cf6 proId\cf5 ;\cf0\par
+\cf5\tab String \cf6 proName\cf5 ;\cf0\par
+\cf5\tab\cf4\b double\cf5\b0  \cf6 proPrice\cf5 ;\cf0\par
+\cf5\tab Product()\{\}\cf0\par
+\cf5\tab Product(\cf4\b int\cf5\b0  \cf7 id\cf5 , String \cf7 name\cf5 , \cf4\b double\cf5\b0  \cf7 price\cf5 )\{\cf0\par
+\cf5\tab\tab\cf4\b this\cf5\b0 .\cf6 proId\cf5  = \cf7 id\cf5 ;\cf0\par
+\cf5\tab\tab\cf4\b this\cf5\b0 .\cf6 proName\cf5 =\cf7 name\cf5 ;\cf0\par
+\cf5\tab\tab\cf4\b this\cf5\b0 .\cf6 proPrice\cf5 =\cf7 price\cf5 ;\cf0\par
+\cf5\tab\}\cf0\par
+\cf5\tab\cf4\b public\cf5\b0  \cf4\b void\cf5\b0  display() \{\cf0\par
+\cf5\tab\tab System.\cf6\b\i out\cf5\b0\i0 .println(\cf6 proId\cf5 );\cf0\par
+\cf5\tab\tab System.\cf6\b\i out\cf5\b0\i0 .println(\cf6 proName\cf5 );\cf0\par
+\cf5\tab\}\cf0\par
+\cf5\tab\cf4\b public\cf5\b0  \cf4\b double\cf5\b0  totalPrice(\cf4\b double\cf5\b0  \cf7 GST\cf5 ) \{\cf0\par
+\cf5\tab\tab\cf4\b return\cf5\b0  \cf4\b this\cf5\b0 .\cf6 proPrice\cf5 +\cf7 GST\cf5 ;\cf0\par
+\cf5\tab\}\cf0\par
+\cf5\tab\cf4\b public\cf5\b0  \cf4\b static\cf5\b0  \cf4\b void\cf5\b0  main(String[]\cf7 args\cf5 ) \{\cf0\par
+\cf5\tab\tab Product \cf7 p1\cf5  = \cf4\b new\cf5\b0  Product();\cf0\par
+\cf5\tab\tab\cf7 p1\cf5 .\cf6 proId\cf5  = 101;\cf0\par
+\cf5\tab\tab\cf7 p1\cf5 .\cf6 proName\cf5  = \cf8 "TV"\cf5 ;\cf0\par
+\cf5\tab\tab\cf7 p1\cf5 .\cf6 proPrice\cf5  = 45000;\cf0\par
+\cf5\tab\tab\cf7 p1\cf5 .display();\cf0\par
+\cf5\tab\tab System.\cf6\b\i out\cf5\b0\i0 .println(\cf7 p1\cf5 .totalPrice(200));\cf0\par
+\cf5\tab\tab\cf0\par
+\cf5\tab\tab Product \cf7 p2\cf5  = \cf4\b new\cf5\b0  Product(102,\cf8 "Chairs"\cf5 ,20000);\cf0\par
+\cf5\tab\tab\cf7 p2\cf5 .display();\cf0\par
+\cf5\tab\tab System.\cf6\b\i out\cf5\b0\i0 .println(\cf7 p2\cf5 .totalPrice(100));\cf0\par
+\cf5\tab\}\cf0\par
+\cf5\}\par
+
+\pard\sa200\sl240\slmult1\cf3\f1\fs24 Create a T-Shirt  class with the following fields.\par
+String color\par
+String material\par
+String design. \par
+Create three instances of object based on different sizes like small, large ,  xtra-large.\par
+\cf4\b\f2\fs20 package\cf5\b0  com.sonata1;\cf0\par
+\cf4\b public\cf5\b0  \cf4\b class\cf5\b0  \highlight9 TShirt\highlight0  \{\cf0\par
+\cf5\tab String \cf6 color\cf5 ;\cf0\par
+\cf5\tab String \cf6 material\cf5 ;\cf0\par
+\cf5\tab String \cf6 design\cf5 ;\cf0\par
+\cf5\tab String \cf6 brand\cf5 ;\cf0\par
+\cf5\tab\cf10 //constructor\cf0\par
+\cf5\tab TShirt()\cf0\par
+\cf5\tab\{\cf0\par
+\cf5\tab\}\cf0\par
+\cf5\tab\cf10 //Parameterized constructor\cf0\par
+\cf5\tab TShirt(String \cf7 color\cf5 ,String \cf7 material\cf5 ,String \cf7 design\cf5 )\cf0\par
+\cf5\tab\{\cf0\par
+\cf5\tab\tab\cf4\b this\cf5\b0 .\cf6 color\cf5 =\cf7 color\cf5 ;\cf0\par
+\cf5\tab\tab\cf4\b this\cf5\b0 .\cf6 material\cf5 =\cf7 material\cf5 ;\cf0\par
+\cf5\tab\tab\cf4\b this\cf5\b0 .\cf6 design\cf5 =\cf7 design\cf5 ;\cf0\par
+\cf5\tab\}\cf0\par
+\cf5\tab\cf10 //Parameterized constructor\cf0\par
+\cf5\tab TShirt(String \cf7 color\cf5 ,String \cf7 material\cf5 ,String \cf7 design\cf5 ,String \cf7 brand\cf5 )\cf0\par
+\cf5\tab\{\cf0\par
+\cf5\tab\tab\cf4\b this\cf5\b0 .\cf6 color\cf5 =\cf7 color\cf5 ;\cf0\par
+\cf5\tab\tab\cf4\b this\cf5\b0 .\cf6 material\cf5 =\cf7 material\cf5 ;\cf0\par
+\cf5\tab\tab\cf4\b this\cf5\b0 .\cf6 design\cf5 =\cf7 design\cf5 ;\cf0\par
+\cf5\tab\tab\cf4\b this\cf5\b0 .\cf6 brand\cf5 =\cf7 brand\cf5 ;\cf0\par
+\cf5\tab\}\cf0\par
+\cf5\tab\cf10 //display method for displaying details\cf0\par
+\cf5\tab\cf4\b public\cf5\b0  \cf4\b void\cf5\b0  display( String \cf7 size\cf5 )\cf0\par
+\cf5\tab\{\cf0\par
+\cf5\tab\tab System.\cf6\b\i out\cf5\b0\i0 .println(\cf6 color\cf5 );\cf0\par
+\cf5\tab\tab System.\cf6\b\i out\cf5\b0\i0 .println(\cf6 material\cf5 );\cf0\par
+\cf5\tab\tab System.\cf6\b\i out\cf5\b0\i0 .println(\cf6 design\cf5 );\cf0\par
+\cf5\tab\tab System.\cf6\b\i out\cf5\b0\i0 .println(\cf7 size\cf5 );\cf0\par
+\cf5\tab\}\cf0\par
+\cf5\tab\cf4\b public\cf5\b0  \cf4\b static\cf5\b0  \cf4\b void\cf5\b0  main(String \cf7 args\cf5 [])\cf0\par
+\cf5\tab\{\cf0\par
+\cf5\tab\tab\highlight9 TShirt\highlight0  \cf7 s\cf5 =\cf4\b new\cf5\b0  \highlight9 TShirt\highlight0 ();\cf10 //object\cf0\par
+\cf5\tab\tab\cf7 s\cf5 .\cf6 color\cf5 =\cf8 "black"\cf5 ;\cf0\par
+\cf5\tab\tab\cf7 s\cf5 .\cf6 material\cf5 =\cf8 "cotton"\cf5 ;\cf0\par
+\cf5\tab\tab\cf7 s\cf5 .\cf6 design\cf5 =\cf8 "trend"\cf5 ;\cf0\par
+\cf5\tab\tab\cf10 //calling display method\cf0\par
+\cf5\tab\tab\cf7 s\cf5 .display(\cf8 "small"\cf5 );\cf0\par
+\cf5\tab\tab\cf10 //System.out.println(s.differentSize("small"));\cf0\par
+\cf5\tab\tab\cf0\par
+\cf5\tab\tab\highlight9 TShirt\highlight0  \cf7 s1\cf5 =\cf4\b new\cf5\b0  \highlight9 TShirt\highlight0 (\cf8 "blue"\cf5 ,\cf8 "silk"\cf5 ,\cf8 "oldfashion"\cf5 );\cf10 //object\cf0\par
+\cf5\tab\tab\cf10 //calling display method\cf0\par
+\cf5\tab\tab\cf7 s1\cf5 .display(\cf8 "large"\cf5 );\cf0\par
+\cf5\tab\tab\cf10 //System.out.println(s1.differentSize("large"));\cf0\par
+\cf5\tab\tab\highlight9 TShirt\highlight0  \cf7 s2\cf5 =\cf4\b new\cf5\b0  \highlight9 TShirt\highlight0 (\cf8 "white"\cf5 ,\cf8 "nilon"\cf5 ,\cf8 "newfashion"\cf5 );\cf10 //object\cf0\par
+\cf5\tab\tab\cf10 //calling display method\cf0\par
+\cf5\tab\tab\cf7 s2\cf5 .display(\cf8 "X-large"\cf5 );\cf0\par
+\cf5\tab\tab\cf10 //System.out.println(s2.differentSize("x-large"));\cf0\par
+\cf5\tab\tab\cf0\par
+\cf5\tab\}\cf0\par
+\cf5\}\par
+
+\pard\sa160\sl259\slmult0\cf1\b\f0\fs22 Inheritance assignment :\cf3\par
+\b0 Create a project called as \highlight11\f3\fs18  "\b MyOwnAutoShopProject\b0 " as following:\highlight0\f0\fs22\par
+
+\pard{\pntext\f5\'B7\tab}{\*\pn\pnlvlblt\pnf5\pnindent360{\pntxtb\'B7}}\fi-360\li600\sb100\sa100\sl240\slmult1\tx720\f3\fs18 Create a super class called Car.\~ The Car class has the following fields and methods.\par
+
+\pard{\pntext\f5\'B7\tab}{\*\pn\pnlvlblt\pnf5\pnindent360{\pntxtb\'B7}}\fi-360\li1320\sb100\sa100\sl240\slmult1\tx1440 int speed;\par
+{\pntext\f5\'B7\tab}double regularPrice;\par
+{\pntext\f5\'B7\tab}String color;\par
+
+\pard\sa200\sl240\slmult1 double getSalePrice();\par
+\cf4\b\f2\fs20 package\cf5\b0  com.sonata1;\cf0\par
+\cf4\b public\cf5\b0  \cf4\b class\cf5\b0  Car \{\cf0\par
+\cf5\tab\cf4\b int\cf5\b0  \cf6 speed\cf5 ;\cf0\par
+\cf5\tab\cf4\b double\cf5\b0  \cf6 regularPrice\cf5 ;\cf0\par
+\cf5\tab String \cf6 color\cf5 ;\cf0\par
+\cf5\tab Car(\cf4\b int\cf5\b0  \cf7 speed\cf5 ,\cf4\b double\cf5\b0  \cf7 regularPrice\cf5 ,String \cf7 color\cf5 )\{\cf0\par
+\cf5\tab\tab\cf4\b this\cf5\b0 .\cf6 speed\cf5 =\cf7 speed\cf5 ;\cf0\par
+\cf5\tab\tab\cf4\b this\cf5\b0 .\cf6 regularPrice\cf5 =\cf7 regularPrice\cf5 ;\cf0\par
+\cf5\tab\tab\cf4\b this\cf5\b0 .\cf6 color\cf5 =\cf7 color\cf5 ;\cf0\par
+\cf5\tab\}\cf0\par
+\cf5\tab\cf4\b public\cf5\b0  \cf4\b double\cf5\b0  getSalePrice()\cf0\par
+\cf5\tab\{\cf0\par
+\cf5\tab\tab\cf4\b return\cf5\b0  \cf6 regularPrice\cf5 ;\cf0\par
+\cf5\tab\}\cf0\par
+\cf5\tab\cf4\b public\cf5\b0  \cf4\b static\cf5\b0  \cf4\b void\cf5\b0  main(String \cf7 args\cf5 [])\cf0\par
+\cf5\tab\{\cf0\par
+\cf5\tab\tab Car \cf7 c\cf5 =\cf4\b new\cf5\b0  Car(250,1500000,\cf8 "white"\cf5 );\cf0\par
+\cf5\tab\tab System.\cf6\b\i out\cf5\b0\i0 .println(\cf7 c\cf5 .getSalePrice());\cf0\par
+\cf5\tab\}\cf0\par
+\cf5\}\par
+
+\pard\sb100\sa100\sl240\slmult1\tx720\cf3\f3\fs18 Create a subclass of Car class and name it as Truck.\~ The Truck class has the following fields and methods.\par
+
+\pard{\pntext\f5\'B7\tab}{\*\pn\pnlvlblt\pnf5\pnindent360{\pntxtb\'B7}}\fi-360\li1320\sb100\sa100\sl240\slmult1\tx1440 int weight;\par
+{\pntext\f5\'B7\tab}double getSalePrice();\~ // If weight > 2000, 10% discount. Otherwise, 20% discount.\par
+
+\pard\sb100\sa100\sl240\slmult1\cf4\b\f2\fs20 package\cf5\b0  com.sonata1;\cf0\par
+\cf4\b public\cf5\b0  \cf4\b class\cf5\b0  Truck \cf4\b extends\cf5\b0  Car \{\cf0\par
+\cf5\tab\cf4\b int\cf5\b0  \cf6 weight\cf5 ;\cf0\par
+\cf5\tab Truck(\cf4\b int\cf5\b0  \cf7 speed\cf5 ,\cf4\b double\cf5\b0  \cf7 regularPrice\cf5 ,String \cf7 color\cf5 ,\cf4\b int\cf5\b0  \cf7 weight\cf5 )\cf0\par
+\cf5\tab\{\cf0\par
+\cf5\tab\tab\cf4\b super\cf5\b0 (\cf7 speed\cf5 ,\cf7 regularPrice\cf5 ,\cf7 color\cf5 );\cf0\par
+\cf5\tab\tab\cf4\b this\cf5\b0 .\cf6 weight\cf5 =\cf7 weight\cf5 ;\cf0\par
+\cf5\tab\}\cf0\par
+\cf5\tab\cf4\b public\cf5\b0  \cf4\b double\cf5\b0  getSalePrice()\cf0\par
+\cf5\tab\{\cf0\par
+\cf5\tab\tab\cf4\b if\cf5\b0 (\cf6 weight\cf5 >2000)\cf0\par
+\cf5\tab\tab\{\cf0\par
+\cf5\tab\tab\tab\cf4\b return\cf5\b0  \cf4\b super\cf5\b0 .getSalePrice()-(0.1*\cf4\b super\cf5\b0 .getSalePrice());\cf0\par
+\cf5\tab\tab\}\cf0\par
+\cf5\tab\tab\cf4\b else\cf0\b0\par
+\cf5\tab\tab\{\cf0\par
+\cf5\tab\tab\tab\cf4\b return\cf5\b0  \cf4\b super\cf5\b0 .getSalePrice()-(0.2*\cf4\b super\cf5\b0 .getSalePrice());\cf0\par
+\cf5\tab\tab\}\cf0\par
+\cf5\tab\}\cf0\par
+\cf5\tab\cf4\b public\cf5\b0  \cf4\b static\cf5\b0  \cf4\b void\cf5\b0  main(String \cf7 args\cf5  [])\cf0\par
+\cf5\tab\{\cf0\par
+\cf5\tab\tab Truck \cf7 t\cf5 =\cf4\b new\cf5\b0  Truck(200,1400000,\cf8 "black"\cf5 ,2500);\cf0\par
+\cf5\tab\tab System.\cf6\b\i out\cf5\b0\i0 .println(\cf7 t\cf5 .getSalePrice());\cf0\par
+\cf5\tab\}\cf0\par
+\cf5\}\par
+
+\pard\sb100\sa100\sl240\slmult1\tx720\cf3\f3\fs18 Create a subclass of Car class and name it as Ford.\~ The Ford class has the following fields and methods\par
+
+\pard{\pntext\f5\'B7\tab}{\*\pn\pnlvlblt\pnf5\pnindent360{\pntxtb\'B7}}\fi-360\li1320\sb100\sa100\sl240\slmult1\tx1440 int year;\par
+{\pntext\f5\'B7\tab}int manufacturerDiscount;\par
+{\pntext\f5\'B7\tab}double getSalePrice();\~ // From the sale price computed from Car class, subtract the manufacturerDiscount.\par
+
+\pard\sb100\sa100\sl240\slmult1\cf4\b\f2\fs20 package\cf5\b0  com.sonata1;\cf0\par
+\cf4\b public\cf5\b0  \cf4\b class\cf5\b0  Ford \cf4\b extends\cf5\b0  Car \{\cf0\par
+\cf5\tab\cf4\b int\cf5\b0  \cf6 year\cf5 ;\cf0\par
+\cf5\tab\cf4\b int\cf5\b0  \cf6 manufactureDiscount\cf5 ;\cf0\par
+\cf5\tab Ford(\cf4\b int\cf5\b0  \cf7 speed\cf5 ,\cf4\b double\cf5\b0  \cf7 regularPrice\cf5 ,String \cf7 color\cf5 ,\cf4\b int\cf5\b0  \cf7 year\cf5 ,\cf4\b int\cf5\b0  \cf7 manfacdisc\cf5 )\cf0\par
+\cf5\tab\{\cf0\par
+\cf5\tab\tab\cf4\b super\cf5\b0 (\cf7 speed\cf5 ,\cf7 regularPrice\cf5 ,\cf7 color\cf5 );\cf0\par
+\cf5\tab\tab\cf4\b this\cf5\b0 .\cf6 year\cf5 =\cf7 year\cf5 ;\cf0\par
+\cf5\tab\tab\cf4\b this\cf5\b0 .\cf6 manufactureDiscount\cf5 =\cf7 manfacdisc\cf5 ;\cf0\par
+\cf5\tab\}\cf0\par
+\cf5\tab\tab\cf4\b public\cf5\b0  \cf4\b double\cf5\b0  getSalePrice()\cf0\par
+\cf5\tab\tab\{\cf0\par
+\cf5\tab\tab\tab\cf4\b return\cf5\b0  \cf4\b super\cf5\b0 .getSalePrice()-\cf6 manufactureDiscount\cf5 ;\cf0\par
+\cf5\tab\tab\}\cf0\par
+\cf5\tab\cf4\b public\cf5\b0  \cf4\b static\cf5\b0  \cf4\b void\cf5\b0  main(String \cf7 args\cf5 [])\cf0\par
+\cf5\tab\{\cf0\par
+\cf5\tab\tab Ford \cf7 f\cf5 =\cf4\b new\cf5\b0  Ford(250,1400000,\cf8 "blue"\cf5 ,2019,5000);\cf0\par
+\cf5\tab\tab System.\cf6\b\i out\cf5\b0\i0 .println(\cf7 f\cf5 .getSalePrice());\cf0\par
+\cf5\tab\}\cf0\par
+
+\pard\sb100\sa100\sl240\slmult1\tx1440\cf5\}\par
+
+\pard\sb100\sa100\sl240\slmult1\tx720\cf3\f3\fs18 Create a subclass of Car class and name it as Sedan. The Sedan class has the following fields and methods.\par
+
+\pard{\pntext\f5\'B7\tab}{\*\pn\pnlvlblt\pnf5\pnindent360{\pntxtb\'B7}}\fi-360\li1320\sb100\sa100\sl240\slmult1\tx1440 int length;\par
+{\pntext\f5\'B7\tab}double getSalePrice();\~ // If length > 20 feet, 5% discount, Otherwise, 10% discount.\par
+
+\pard\sb100\sa100\sl240\slmult1\cf4\b\f2\fs20 package\cf5\b0  com.sonata1;\cf0\par
+\cf4\b public\cf5\b0  \cf4\b class\cf5\b0  Sedan \cf4\b extends\cf5\b0  Car\{\cf0\par
+\cf5\tab\cf4\b int\cf5\b0  \cf6 length\cf5 ;\cf0\par
+\cf5\tab Sedan(\cf4\b int\cf5\b0  \cf7 speed\cf5 ,\cf4\b double\cf5\b0  \cf7 regularPrice\cf5 ,String \cf7 color\cf5 ,\cf4\b int\cf5\b0  \cf7 length\cf5 )\cf0\par
+\cf5\tab\{\cf0\par
+\cf5\tab\tab\cf4\b super\cf5\b0 (\cf7 speed\cf5 ,\cf7 regularPrice\cf5 ,\cf7 color\cf5 );\cf0\par
+\cf5\tab\tab\cf4\b this\cf5\b0 .\cf6 length\cf5 =\cf7 length\cf5 ;\cf0\par
+\cf5\tab\}\cf0\par
+\cf5\tab\cf4\b public\cf5\b0  \cf4\b double\cf5\b0  getSalePrice()\cf0\par
+\cf5\tab\{\cf0\par
+\cf5\tab\tab\cf4\b if\cf5\b0 (\cf6 length\cf5 >20)\cf0\par
+\cf5\tab\tab\{\cf0\par
+\cf5\tab\tab\tab\cf4\b return\cf5\b0  \cf4\b super\cf5\b0 .getSalePrice()-(0.05*\cf4\b super\cf5\b0 .getSalePrice());\cf0\par
+\cf5\tab\tab\}\cf0\par
+\cf5\tab\tab\cf4\b else\cf0\b0\par
+\cf5\tab\tab\{\cf0\par
+\cf5\tab\tab\tab\cf4\b return\cf5\b0  \cf4\b super\cf5\b0 .getSalePrice()-(0.1*\cf4\b super\cf5\b0 .getSalePrice());\cf0\par
+\cf5\tab\tab\}\cf0\par
+\cf5\tab\}\cf0\par
+\cf5\tab\cf4\b public\cf5\b0  \cf4\b static\cf5\b0  \cf4\b void\cf5\b0  main(String \cf7 args\cf5 [])\cf0\par
+\cf5\tab\{\cf0\par
+\cf5\tab\tab Sedan \cf7 s\cf5 =\cf4\b new\cf5\b0  Sedan(250,1400000,\cf8 "black"\cf5 ,30);\cf0\par
+\cf5\tab\tab System.\cf6\b\i out\cf5\b0\i0 .println(\cf7 s\cf5 .getSalePrice());\cf0\par
+\cf5\tab\}\cf0\par
+
+\pard\sb100\sa100\sl240\slmult1\tx1440\cf5\}\par
+
+\pard\sb100\sa100\sl240\slmult1\tx720\cf3\f3\fs18 Create MyOwnAutoShop class which contains the main() method.\~ Perform the following within the main() method.\par
+
+\pard{\pntext\f5\'B7\tab}{\*\pn\pnlvlblt\pnf5\pnindent360{\pntxtb\'B7}}\fi-360\li1320\sb100\sa100\sl240\slmult1\tx1440 Create an instance of Sedan class and initialize all the fields with appropriate values.\~ Use super(...) method in the constructor for initializing the fields of the super class.\par
+{\pntext\f5\'B7\tab}Create two instances of the Ford class and initialize all the fields with appropriate values.\~ Use super(...) method in the constructor for initializing the fields of the super class.\par
+{\pntext\f5\'B7\tab}Create an instance of Car class and and initialize all the fields with appropriate values.\par
+
+\pard\sb100\sa100\sl240\slmult1\tx720 Display the sale prices of all instance.\par
+
+\pard\sb100\sa100\sl240\slmult1\cf4\b\f2\fs20 package\cf5\b0  com.sonata1;\cf0\par
+\cf4\b public\cf5\b0  \cf4\b class\cf5\b0  MyOwnAutoShopClass \{\cf0\par
+\cf5\tab MyOwnAutoShop(\cf4\b int\cf5\b0  speed,\cf4\b double\cf5\b0  regularPrice,String color,\cf4\b int\cf5\b0  length)\cf0\par
+\cf5\tab\{\cf0\par
+\cf5\tab\tab\cf4\b super\cf5\b0 (speed,regularPrice,color,length);\cf0\par
+\cf5\tab\}\cf0\par
+\cf5\tab MyOwnAutoShop(\cf4\b int\cf5\b0  speed,\cf4\b double\cf5\b0  regularPrice,String color, \cf4\b int\cf5\b0  year, \cf4\b int\cf5\b0  manfacdisc)\cf0\par
+\cf5\tab\{\cf0\par
+\cf5\tab\tab\cf4\b super\cf5\b0 (speed,regularPrice,color,year,manfacdisc);\cf0\par
+\cf5\tab\}\cf0\par
+\cf5\tab MyOwnAutoShop(\cf4\b int\cf5\b0  speed,\cf4\b double\cf5\b0  regularPrice,String color)\cf0\par
+\cf5\tab\{\cf0\par
+\cf5\tab\tab\cf4\b super\cf5\b0 (speed,regularPrice,color);\cf0\par
+\cf5\tab\}\cf0\par
+\cf5\tab\cf4\b public\cf5\b0  \cf4\b static\cf5\b0  \cf4\b void\cf5\b0  main(String[] \cf7 args\cf5 ) \cf0\par
+\cf5\tab\{\cf0\par
+\cf5\tab\tab Car \cf7 myCar\cf5  = \cf4\b new\cf5\b0  Car (130, 700000.0, \cf8 "Red"\cf5 );\cf0\par
+\cf5\tab\tab Sedan \cf7 mySedan\cf5  = \cf4\b new\cf5\b0  Sedan(120, 4000000.0, \cf8 "Black"\cf5 ,19);\cf0\par
+\cf5\tab\tab Ford \cf7 myFord1\cf5  = \cf4\b new\cf5\b0  Ford (160,5000000.0,\cf8 "Blue"\cf5 ,2008, 500);\cf0\par
+\cf5\tab\tab Ford \cf7 myFord2\cf5  = \cf4\b new\cf5\b0  Ford (140,4000000.0,\cf8 "Pink"\cf5 ,2009, 1000);\cf0\par
+\cf5\tab\tab System.\cf6\b\i out\cf5\b0\i0 .println(\cf8 "MySedan Price"\cf5 + \cf7 mySedan\cf5 .getSalePrice()+\cf8 "\\n"\cf5 );\cf0\par
+\cf5\tab\tab System.\cf6\b\i out\cf5\b0\i0 .println(\cf8 "MyFord1 Price "\cf5 + \cf7 myFord1\cf5 .getSalePrice()+\cf8 "\\n"\cf5 );\cf0\par
+\cf5\tab\tab System.\cf6\b\i out\cf5\b0\i0 .println(\cf8 "MyFord2 Price"\cf5 + \cf7 myFord2\cf5 .getSalePrice()+\cf8 "\\n"\cf5 );\cf0\par
+\cf5\tab\tab System.\cf6\b\i out\cf5\b0\i0 .println(\cf8 "MyCar Price "\cf5 + \cf7 myCar\cf5 .getSalePrice()+\cf8 "\\n"\cf5 );\cf0\par
+\cf5\tab\}\cf0\par
+\cf5\}\par
+\par
+\f4\lang1033 _________________________________END_____________________________________\cf0\f2\lang9\par
+
+\pard\sb100\sa100\sl240\slmult1\tx720\cf3\f3\fs18\par
+
+\pard\sa160\sl259\slmult0\cf0\f0\fs22\par
+
+\pard\sb100\sa100\sl240\slmult1\tx1440\cf3\f3\fs18\par
+\par
+
+\pard\sb100\sa100\sl240\slmult1\cf0\f2\fs20\par
+
+\pard\sb100\sa100\sl240\slmult1\tx1440\cf3\f3\fs18\par
+
+\pard\sa200\sl240\slmult1\f2\fs20\par
+\f1\fs24\par
+\par
+
+\pard\sa200\sl276\slmult1\cf0\f2\fs20\par
+\cf3\f1\fs24\par
+\cf0\fs28\par
+
+\pard\sa200\sl240\slmult1\cf3\fs24\par
+
+\pard\sa200\sl276\slmult1\fs28\par
+\cf0\f0\fs22\par
+}
+ 
