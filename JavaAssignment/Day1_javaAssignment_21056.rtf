@@ -1,0 +1,175 @@
+{\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Cambria;}{\f1\fnil Consolas;}{\f2\fnil\fcharset0 Consolas;}{\f3\fnil\fcharset0 Calibri;}}
+{\colortbl ;\red255\green0\blue0;\red127\green0\blue85;\red0\green0\blue0;\red106\green62\blue62;\red0\green0\blue192;\red42\green0\blue255;\red212\green212\blue212;\red240\green216\blue168;}
+{\*\generator Riched20 10.0.19041}\viewkind4\uc1 
+\pard\sa160\sl259\slmult0\ul\f0\fs28\lang9 Java-basic-Assignments \ulnone :\par
+
+\pard\sa200\sl276\slmult1\cf1\fs24 Declare three number variables with value as 12,25,89 find the greatest number and display.\par
+
+\pard\sa200\sl240\slmult1\cf2\b\f1\fs20 package\cf3\b0  com.sonata;\cf0\par
+\cf2\b public\cf3\b0  \cf2\b class\cf3\b0  MyIf \{\cf0\par
+\cf3\tab\cf2\b public\cf3\b0  \cf2\b static\cf3\b0  \cf2\b void\cf3\b0  main(String[]\cf4 args\cf3 ) \{\cf0\par
+\cf3\tab\tab\cf2\b int\cf3\b0  \cf4 a\cf3  = 12;\cf0\par
+\cf3\tab\tab\cf2\b int\cf3\b0  \cf4 b\cf3  = 25;\cf0\par
+\cf3\tab\tab\cf2\b int\cf3\b0  \cf4 c\cf3  = 89;\cf0\par
+\cf3\tab\tab\cf2\b if\cf3\b0 (\cf4 a\cf3  > \cf4 b\cf3  && \cf4 a\cf3  > \cf4 c\cf3 )\cf0\par
+\cf3\tab\tab\tab System.\cf5\b\i out\cf3\b0\i0 .println(\cf4 a\cf3  + \cf6 "is greater"\cf3 );\cf0\par
+\cf3\tab\tab\cf2\b else\cf3\b0  \cf2\b if\cf3\b0 (\cf4 b\cf3 >\cf4 c\cf3 )\cf0\par
+\cf3\tab\tab\tab System.\cf5\b\i out\cf3\b0\i0 .println(\cf4 b\cf3  + \cf6 "is greater"\cf3 );\cf0\par
+\cf3\tab\tab\cf2\b else\cf0\b0\par
+\cf3\tab\tab\tab System.\cf5\b\i out\cf3\b0\i0 .println(\cf4 c\cf3  + \cf6 "is greater"\cf3 );\cf0\par
+\cf3\tab\}\cf0\par
+\cf3\}\par
+
+\pard\sa200\sl276\slmult1\cf1\f0\fs24 Write a program in java to display the first 10 natural numbers. Expected output is 1 to 10 numbers\par
+\cf2\b\f1\fs20 package\cf3\b0  com.sonata;\cf0\par
+\cf2\b public\cf3\b0  \cf2\b class\cf3\b0  MyFor \{\cf0\par
+\cf3\tab\cf2\b public\cf3\b0  \cf2\b static\cf3\b0  \cf2\b void\cf3\b0  main(String[]\cf4 args\cf3 ) \{\cf0\par
+\cf3\tab\tab\cf2\b for\cf3\b0 (\cf2\b int\cf3\b0  \cf4 i\cf3 =1;\cf4 i\cf3 <=10;\cf4 i\cf3 ++) \{\cf0\par
+\cf3\tab\tab\tab System.\cf5\b\i out\cf3\b0\i0 .println(\cf4 i\cf3 );\cf0\par
+\cf3\tab\tab\}\par
+\f2\lang1033       \f1\lang9\}\cf0\par
+\cf3\}\par
+\cf1\f0\fs24 Write a java program to display the cube of the given number for ex: if given number is 2 then cube of it is 8.\par
+\cf2\b\f1\fs20 package\cf3\b0  com.sonata;\cf0\par
+\cf2\b public\cf3\b0  \cf2\b class\cf3\b0  MyFirstJava \{\cf0\par
+\cf3\tab\cf2\b public\cf3\b0  \cf2\b static\cf3\b0  \cf2\b void\cf3\b0  main(String[]\cf4 args\cf3 ) \{\cf0\par
+\cf3\tab\tab\cf2\b int\cf3\b0  \cf4 i\cf3  = 2;\cf0\par
+\cf3\tab\tab System.\cf5\b\i out\cf3\b0\i0 .println(\cf6 "Cube of a number "\cf3 +\cf4 i\cf3 +\cf6 " is:"\cf3 +\f2\lang1033   \f1\lang9 Math.\i pow\i0 (\cf4 i\cf3 ,3));\cf0\par
+\cf3\tab\}\cf0\par
+\cf3\}\par
+
+\pard\sa200\sl240\slmult1\cf1\f0\fs24 Write a java program to sum values of an array. For example a[5] =\{1,2,3,4,5,6\} the sum of the values is 21.\par
+\cf2\b\f1\fs20 package\cf3\b0  com.sonata;\cf0\par
+\cf2\b public\cf3\b0  \cf2\b class\cf3\b0  MyArray \{ \cf0\par
+\cf3\tab\cf2\b public\cf3\b0  \cf2\b static\cf3\b0  \cf2\b void\cf3\b0  main(String[]\cf4 args\cf3 ) \{\cf0\par
+\cf3\tab\tab\cf2\b int\cf3\b0  \cf4 a\cf3 [] = \{1,2,3,4,5,6\}; \cf0\par
+\cf3\tab\tab\cf2\b int\cf3\b0  \cf4 sum\cf3  = 0;\cf0\par
+\cf3\tab\tab\cf2\b for\cf3\b0 (\cf2\b int\cf3\b0  \cf4 i\cf3 =0;\cf4 i\cf3 <=\cf4 a\cf3 .\cf5\highlight7\f2\lang1033 length\cf3\highlight0\f1\lang9 ;\cf4 i\cf3 ++) \{\cf0\par
+\cf3\tab\tab\tab\cf4 sum\cf3  = \cf4 sum\cf3 +\cf4 i\cf3 ;\cf0\par
+\cf3\tab\tab\}\cf0\par
+\cf3\tab\tab System.\cf5\b\i out\cf3\b0\i0 .println(\cf6 "The total sum is: "\cf3 + \cf4 sum\cf3 );\cf0\par
+\cf3\tab\}\cf0\par
+\cf3\}\par
+
+\pard\sa200\sl276\slmult1\cf1\f0\fs24 Write a java program to test if an array contains a specific value.\par
+\cf2\b\f1\fs20 package\cf3\b0  com.sonata;\cf0\par
+\cf2\b public\cf3\b0  \cf2\b class\cf3\b0  MyArray \{ \cf0\par
+\cf3\tab\cf2\b public\cf3\b0  \cf2\b static\cf3\b0  \cf2\b void\cf3\b0  main(String[]\cf4 args\cf3 ) \{\cf0\par
+\cf3\tab\tab\cf2\b int\cf3\b0  \cf4 a\cf3 [] = \{1,2,3,4,5,6\};\cf0\par
+\cf3\tab\tab\cf2\b int\cf3\b0  \cf4 toFind\cf3  =8;\cf0\par
+\cf3\tab\tab\cf2\b boolean\cf3\b0  \cf4 found\cf3  = \cf2\b false\cf3\b0 ;\cf0\par
+\cf3\tab\tab\cf2\b for\cf3\b0 (\cf2\b int\cf3\b0  \cf4 i\cf3 =0;\cf4 i\cf3 <=\cf4 a\cf3 .\cf5 length\cf3 ;\cf4 i\cf3 ++) \{\cf0\par
+\cf3\tab\tab\tab\cf2\b if\cf3\b0 (\cf4 i\cf3  == \cf4 toFind\cf3 ) \{\cf0\par
+\cf3\tab\tab\tab\tab\cf4 found\cf3  = \cf2\b true\cf3\b0 ;\cf0\par
+\cf3\tab\tab\tab\tab\cf2\b break\cf3\b0 ;\cf0\par
+\cf3\tab\tab\tab\}\cf0\par
+\cf3\tab\tab\}\cf0\par
+\cf3\tab\tab\cf2\b if\cf3\b0 (\cf4 found\cf3 )\cf0\par
+\cf3\tab\tab\tab System.\cf5\b\i out\cf3\b0\i0 .println(\cf4 toFind\cf3  + \cf6 " is found"\cf3 );\cf0\par
+\cf3\tab\tab\cf2\b else\cf0\b0\par
+\cf3\tab\tab\tab System.\cf5\b\i out\cf3\b0\i0 .println(\cf4 toFind\cf3  + \cf6 " is not found"\cf3 );\cf0\par
+\cf3\tab\tab\}\cf0\par
+\cf3\}\par
+\cf1\f0\fs24 Write a java program to reverse an array of integer values.\par
+\cf2\b\f1\fs20 package\cf3\b0  com.sonata;\cf0\par
+\cf2\b public\cf3\b0  \cf2\b class\cf3\b0  Assignment \{\cf0\par
+\cf3\tab\cf2\b public\cf3\b0  \cf2\b static\cf3\b0  \cf2\b void\cf3\b0  main(String[]\cf4 args\cf3 ) \{\cf0\par
+\cf3\tab\tab\cf2\b int\cf3\b0  \cf4 a\cf3 [] = \{1,2,3,4,5\};\cf0\par
+\cf3\tab\tab System.\cf5\b\i out\cf3\b0\i0 .println(\cf6 "Original array:"\cf3 );\cf0\par
+\cf3\tab\tab\cf2\b for\cf3\b0 (\cf2\b int\cf3\b0  \cf4 i\cf3  =0;\cf4 i\cf3 <\cf4 a\cf3 .\cf5 length\cf3 ;\cf4 i\cf3 ++) \{\cf0\par
+\cf3\tab\tab\tab System.\cf5\b\i out\cf3\b0\i0 .print(\cf4 a\cf3 [\cf4 i\cf3 ]);\cf0\par
+\cf3\tab\tab\}\cf0\par
+\cf3\tab\tab System.\cf5\b\i out\cf3\b0\i0 .println();\cf0\par
+\cf3\tab\tab System.\cf5\b\i out\cf3\b0\i0 .println(\cf6 "Reversal array:"\cf3 );\cf0\par
+\cf3\tab\tab\cf2\b for\cf3\b0 (\cf2\b int\cf3\b0  \cf4 i\cf3  =\cf4 a\cf3 .\cf5 length\cf3 -1;\cf4 i\cf3 >=0;\cf4 i\cf3 --) \{\cf0\par
+\cf3\tab\tab\tab System.\cf5\b\i out\cf3\b0\i0 .print(\cf4 a\cf3 [\cf4 i\cf3 ]);\cf0\par
+\cf3\tab\tab\}\cf0\par
+\cf3\tab\}\cf0\par
+\cf3\}\par
+\cf1\f0\fs24 Read the String and replace Ovals with dollar symbol program.\par
+\cf2\b\f1\fs20 package\cf3\b0  com.sonata;\cf0\par
+\cf2\b public\cf3\b0  \cf2\b class\cf3\b0  Assignment \{\cf0\par
+\cf3\tab\cf2\b public\cf3\b0  \cf2\b static\cf3\b0  \cf2\b void\cf3\b0  main(String[]\cf4 args\cf3 ) \{\cf0\par
+\cf3\tab\tab String \cf4 s\cf3  =\cf6 "Hello"\cf3 ;\cf0\par
+\cf3\tab\tab\cf2\b char\cf3\b0  \cf4 c\cf3 [] = \cf4 s\cf3 .toCharArray();\cf0\par
+\cf3\tab\tab\cf2\b for\cf3\b0 (\cf2\b int\cf3\b0  \cf4 i\cf3  = 0;\cf4 i\cf3 <\cf4 c\cf3 .\cf5 length\cf3 ;\cf4 i\cf3 ++) \{\cf0\par
+\cf3\tab\tab\tab\cf2\b if\cf3\b0 (\cf4 c\cf3 [\cf4 i\cf3 ]==\cf6 'a'\cf3  || \cf4 c\cf3 [\cf4 i\cf3 ]==\cf6 'e'\cf3  ||\cf4 c\cf3 [\cf4 i\cf3 ]==\cf6 'i'\cf3  || \cf4 c\cf3 [\cf4 i\cf3 ]==\cf6 'o'\cf3  || \cf4 c\cf3 [\cf4 i\cf3 ]==\cf6 'u'\cf3 ) \{\cf0\par
+\cf3\tab\tab\tab\tab\cf4 c\cf3 [\cf4 i\cf3 ]=\cf6 '$'\cf3 ;\cf0\par
+\cf3\tab\tab\tab\}\cf0\par
+\cf3\tab\tab\}\cf0\par
+\cf3\tab\tab\cf2\b for\cf3\b0 (\cf2\b int\cf3\b0  \cf4 i\cf3 =0;\cf4 i\cf3 <\cf4 c\cf3 .\cf5 length\cf3 ;\cf4 i\cf3 ++) \{\cf0\par
+\cf3\tab\tab\tab System.\cf5\b\i out\cf3\b0\i0 .\highlight7 print\highlight0 (\cf4 c\cf3 [\cf4 i\cf3 ]);\cf0\par
+\cf3\tab\tab\}\cf0\par
+\cf3\tab\tab\tab\}\cf0\par
+\cf3\f2\lang1033            \f1\lang9\}\par
+\cf1\f0\fs24 Write a program to identify duplicate values in an array.\par
+\cf2\b\f1\fs20 package\cf3\b0  com.sonata;\cf0\par
+\cf2\b public\cf3\b0  \cf2\b class\cf3\b0  Assignment \{\cf0\par
+\cf3\tab\cf2\b public\cf3\b0  \cf2\b static\cf3\b0  \cf2\b void\cf3\b0  main(String[]\cf4 args\cf3 ) \{\cf0\par
+\cf3\tab\tab\cf2\b int\cf3\b0  \cf4 a\cf3 [] = \{1,2,3,2,4,5,3\};\cf0\par
+\cf3\tab\tab\cf2\b for\cf3\b0 (\cf2\b int\cf3\b0  \cf4 i\cf3 =0;\cf4 i\cf3 <\cf4 a\cf3 .\cf5 length\cf3 ;\cf4 i\cf3 ++) \{\cf0\par
+\cf3\tab\tab\tab\cf2\b for\cf3\b0 (\cf2\b int\cf3\b0  \cf4 j\cf3 =\cf4 i\cf3 +1;\cf4 j\cf3 <\cf4 a\cf3 .\cf5 length\cf3 ;\cf4 j\cf3 ++) \{\cf0\par
+\cf3\tab\tab\tab\tab\cf2\b if\cf3\b0 (\cf4 a\cf3 [\cf4 i\cf3 ]==\cf4 a\cf3 [\cf4 j\cf3 ])\cf0\par
+\cf3\tab\tab\tab\tab\tab System.\cf5\b\i out\cf3\b0\i0 .println(\cf4 a\cf3 [\cf4 j\cf3 ]);\cf0\par
+\cf3\tab\tab\tab\}\cf0\par
+\cf3\tab\tab\}\cf0\par
+\cf3\tab\}\cf0\par
+\cf3\}\cf1\f0\fs24\par
+Read the highest count of duplicates from array of integers.\par
+\cf2\b\f1\fs20 package\cf3\b0  com.sonata;\cf0\par
+\cf2\b public\cf3\b0  \cf2\b class\cf3\b0  Assignment \{\cf0\par
+\cf3\tab\cf2\b public\cf3\b0  \cf2\b static\cf3\b0  \cf2\b void\cf3\b0  main(String[]\cf4 args\cf3 ) \{\cf0\par
+\cf3\tab\tab\cf2\b int\cf3\b0  \cf4 a\cf3 [] = \{1,2,3,2,4,5,3\};\cf0\par
+\cf3\tab\tab\cf2\b int\cf3\b0  \cf4\highlight8 maxCounter\cf3\highlight0 =0;\cf0\par
+\cf3\tab\tab\cf2\b int\cf3\b0  \cf4 element\cf3 =0;\cf0\par
+\cf3\tab\tab\cf2\b for\cf3\b0 (\cf2\b int\cf3\b0  \cf4 i\cf3 =0;\cf4 i\cf3 <\cf4 a\cf3 .\cf5 length\cf3 ;\cf4 i\cf3 ++) \{\cf0\par
+\cf3\tab\tab\tab\cf2\b int\cf3\b0  \cf4 counter\cf3  =1;\cf0\par
+\cf3\tab\tab\tab\cf2\b for\cf3\b0 (\cf2\b int\cf3\b0  \cf4 j\cf3 =\cf4 i\cf3 +1;\cf4 j\cf3 <\cf4 a\cf3 .\cf5 length\cf3 ;\cf4 j\cf3 ++) \{\cf0\par
+\cf3\tab\tab\tab\tab\cf2\b if\cf3\b0 (\cf4 a\cf3 [\cf4 i\cf3 ]==\cf4 a\cf3 [\cf4 j\cf3 ]) \{\cf0\par
+\cf3\tab\tab\tab\tab\tab\cf4 counter\cf3 ++;\cf0\par
+\cf3\tab\tab\tab\tab\}\cf0\par
+\cf3\tab\tab\tab\}\cf0\par
+\cf3\tab\tab\tab\cf2\b if\cf3\b0 (\cf4\highlight7 maxCounter\cf3\highlight0 <\cf4 counter\cf3 ) \{\cf0\par
+\cf3\tab\tab\tab\tab\cf4\highlight8 maxCounter\cf3\highlight0 =\cf4 counter\cf3 ;\cf0\par
+\cf3\tab\tab\tab\tab\cf4 element\cf3 =\cf4 a\cf3 [\cf4 i\cf3 ];\cf0\par
+\cf3\tab\tab\tab\}\cf0\par
+\cf3\tab\tab\}\cf0\par
+\cf3\tab\tab System.\cf5\b\i out\cf3\b0\i0 .println(\cf6 "highest number of repeating of values is:"\cf3 +\cf4 element\cf3 +\cf6 "maximum count is: "\cf3 +\cf4\highlight7 maxCounter\cf3\highlight0 );\cf0\par
+\cf3\tab\}\cf0\par
+\cf3\}\cf0\par
+\cf1\f0\fs24\par
+Write a program to identify 2 large numbers in an array.\par
+\cf2\b\f1\fs20 package\cf3\b0  com.sonata;\cf0\par
+\par
+\cf2\b public\cf3\b0  \cf2\b class\cf3\b0  Assignment \{\cf0\par
+\cf3\tab\cf2\b public\cf3\b0  \cf2\b static\cf3\b0  \cf2\b void\cf3\b0  main(String \cf4 args\cf3 [])\{\cf0\par
+\cf3     \tab  \cf2\b int\cf3\b0  \cf4 temp\cf3 , \cf4 size\cf3 ;\cf0\par
+\cf3      \tab\cf2\b int\cf3\b0  \cf4 array\cf3 [] = \{10, 20, 25, 63, 96, 57\};\cf0\par
+\cf3      \tab\cf4 size\cf3  = \cf4 array\cf3 .\cf5 length\cf3 ;\cf0\par
+\cf3     \tab  \cf2\b for\cf3\b0 (\cf2\b int\cf3\b0  \cf4 i\cf3  = 0; \cf4 i\cf3 <\cf4 size\cf3 ; \cf4 i\cf3 ++ )\{\cf0\par
+\cf3         \tab\cf2\b for\cf3\b0 (\cf2\b int\cf3\b0  \cf4 j\cf3  = \cf4 i\cf3 +1; \cf4 j\cf3 <\cf4 size\cf3 ; \cf4 j\cf3 ++)\{\cf0\par
+\cf3           \tab\tab  \cf2\b if\cf3\b0 (\cf4 array\cf3 [\cf4 i\cf3 ]>\cf4 array\cf3 [\cf4 j\cf3 ])\{\cf0\par
+\cf3              \tab  \cf4 temp\cf3  = \cf4 array\cf3 [\cf4 i\cf3 ];\cf0\par
+\cf3               \tab\cf4 array\cf3 [\cf4 i\cf3 ] = \cf4 array\cf3 [\cf4 j\cf3 ];\cf0\par
+\cf3               \tab\cf4 array\cf3 [\cf4 j\cf3 ] = \cf4 temp\cf3 ;\cf0\par
+\cf3           \tab\tab  \}\cf0\par
+\cf3         \}\cf0\par
+\cf3      \}\cf0\par
+\cf3      System.\cf5\b\i out\cf3\b0\i0 .println(\cf6 "Third second largest number is:: "\cf3 +\cf4 array\cf3 [\cf4 size\cf3 -2]);\cf0\par
+\cf3   \}\cf0\par
+\cf3\}\par
+\par
+\f2\lang1033 ___________________________________END_____________________________________\cf1\f0\fs24\lang9\par
+\par
+
+\pard\sa200\sl240\slmult1\par
+
+\pard\sa200\sl276\slmult1\par
+\par
+
+\pard\sa200\sl240\slmult1\par
+\par
+
+\pard\sa200\sl276\slmult1\cf0\f3\fs22\par
+}
+ 
