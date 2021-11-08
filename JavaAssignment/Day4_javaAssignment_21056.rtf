@@ -1,0 +1,232 @@
+{\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Calibri;}{\f1\fnil Consolas;}{\f2\fnil\fcharset0 Consolas;}{\f3\fnil\fcharset2 Symbol;}}
+{\colortbl ;\red0\green176\blue80;\red255\green0\blue0;\red127\green0\blue85;\red0\green0\blue0;\red106\green62\blue62;\red42\green0\blue255;\red0\green0\blue192;\red63\green127\blue95;}
+{\*\generator Riched20 10.0.19041}\viewkind4\uc1 
+\pard\sa200\sl276\slmult1\cf1\b\f0\fs22\lang9 Core-Java Problem statement:\par
+
+\pard\sl240\slmult1\tx780\cf2\b0 Create Employee class with below attributes and override the toString() method to display the employee data:-\par
+
+\pard{\pntext\f3\'B7\tab}{\*\pn\pnlvlblt\pnf3\pnindent360{\pntxtb\'B7}}\fi-360\li1500\sl240\slmult1\tx1500 Employee ID\par
+{\pntext\f3\'B7\tab}Employee Name\par
+{\pntext\f3\'B7\tab}Employee Salary\par
+
+\pard\sl240\slmult1\tx1500 Create an interface EmployeeInt with following methods:\par
+
+\pard{\pntext\f3\'B7\tab}{\*\pn\pnlvlblt\pnf3\pnindent360{\pntxtb\'B7}}\fi-360\li1440\sl240\slmult1 public void addEmployee(Employee e);\par
+{\pntext\f3\'B7\tab}public void deleteEmployee(Employee e);\par
+{\pntext\f3\'B7\tab}public double yearSalary(Employee e1);\par
+{\pntext\f3\'B7\tab}public double appSalary(Employee e1)\par
+
+\pard\sl240\slmult1\par
+  Implement the interface in EmployeeImpl class. \par
+Write a UserEmployee class which creates few instance of Employee class in main method and add the Employees in an List and display them using above methods.\par
+
+\pard{\pntext\f3\'B7\tab}{\*\pn\pnlvlblt\pnf3\pnindent360{\pntxtb\'B7}}\fi-360\li2220\sl240\slmult1 Check for the duplication of employee ID with comparable method. If found handle DuplicateEmpoyeeID Exception\par
+{\pntext\f3\'B7\tab}Increase the employee salary by 5000 if the Employee Salary is less than 10,000\par
+{\pntext\f3\'B7\tab}Calculate the yearly salary for given employee.\par
+
+\pard\sl240\slmult1\par
+\cf0\f1\fs20 package com.sonata.CompletExample;\par
+\par
+\par
+public class Employee implements Comparable <Employee> \{\par
+\par
+int eid;\par
+String ename;\par
+double esal;\par
+public int getEid() \{\par
+return eid;\par
+\}\par
+public void setEid(int eid) \{\par
+this.eid = eid;\par
+\}\par
+public String getEname() \{\par
+return ename;\par
+\}\par
+public void setEname(String ename) \{\par
+this.ename = ename;\par
+\}\par
+public double getEsal() \{\par
+return this.esal;\par
+\}\par
+public void setEsal(double esal) \{\par
+this.esal = esal;\par
+\}\par
+@Override\par
+public String toString() \{\par
+return "Employee [eid=" + eid + ", ename=" + ename + ", esal=" + esal + "]";\par
+\}\par
+\par
+public int compare(Employee s1, Employee s2) \{\par
+if(s1.eid==s2.eid)\par
+return 0;\par
+else return s1.eid>s2.eid ? 1: -1;\par
+\}\par
+\par
+\par
+@Override\par
+public int compareTo(Employee o) \{\par
+if(eid==o.getEid())\par
+return 0;\par
+\par
+else\par
+return -1;\par
+\par
+\}\par
+\cf3\par
+\}\par
+\par
+\cf0 package com.sonata.CompletExample;\par
+\par
+import java.util.List;\par
+\par
+public interface EmployeeInt \{\par
+\par
+public void addEmployee(Employee e);\par
+public void deleteEmployee(Employee e);\par
+public double yearSalary(Employee e1);\par
+public double appSalary(Employee e1);\par
+\par
+public List<Employee>getEmployee();\par
+\par
+\}\par
+\par
+\par
+package com.sonata.CompletExample;\par
+\par
+import java.util.Iterator;\par
+import java.util.LinkedList;\par
+import java.util.List;\par
+\par
+public class EmployeeImpl extends Employee implements EmployeeInt \{\par
+List<Employee> l1 = new LinkedList<>();\par
+\par
+@Override\par
+public void addEmployee(Employee e) \{\par
+l1.add(e);\par
+\}\par
+\par
+@Override\par
+public List<Employee> getEmployee()\{\par
+\par
+return null;\par
+\}\par
+\par
+@Override\par
+public void deleteEmployee(Employee e) \{\par
+\par
+\par
+\}\par
+\par
+@Override\par
+public double yearSalary(Employee e1) \{\par
+return esal;\par
+\par
+\par
+\}\par
+\par
+@Override\par
+public double appSalary(Employee e1) \{\par
+if(esal>10000)\par
+return esal;\par
+else\par
+return esal+5000;\par
+\par
+\}\par
+\par
+\}\par
+\par
+\par
+package com.sonata.CompletExample;\par
+public class UserEmployee extends Employee \{\par
+\tab public static void main(String args[]) \{\par
+\tab\tab Employee e1= new Employee();\par
+\tab\tab e1.setEid(333);\par
+\tab\tab e1.setEname("Revathi");\par
+\tab\tab e1.setEsal(262666);\par
+\tab\tab EmployeeImpl l1= new EmployeeImpl();\par
+\tab //\tab l1.addEmployee(e1);\par
+\tab\tab //l1.addEmployee(e2);\par
+\tab\tab l1.setEid(333);\par
+\tab\tab l1.setEname("Dhanush");\par
+\tab\tab l1.setEsal(100);\par
+\tab\tab System.out.println(l1);\par
+\tab\tab System.out.println("calculated salary of Dhanush "+ l1.yearSalary(l1));\par
+\tab\tab System.out.println("incremented salary of Dhanush " +l1.appSalary(l1));\par
+\tab\tab System.out.println(e1);\par
+\tab\}\par
+\}\par
+\par
+\f0\fs22\par
+\par
+
+\pard\sl240\slmult1\tx780\cf2 Create a student class with list of students and display the students based on markers with descending order using the compareTo method with lambda expressions.\par
+\par
+\cf0\fs20 package com.sonata.Day4Assignments;\par
+\par
+\f2 import java.util.ArrayList;\par
+import java.util.List;\par
+\par
+public class Student \{\par
+\tab    String name; \par
+\tab    int age; \par
+\tab    int id; \par
+\tab    public String getName() \{\par
+\tab       return name; \par
+\tab    \} \par
+\tab    public int getAge() \{ \par
+\tab       return age; \par
+\tab    \} \par
+\tab    public int getId() \{ \par
+\tab       return id; \par
+\tab    \} \par
+\tab    Student(String n, int a, int i)\{ \par
+\tab       name = n; \par
+\tab       age = a; \par
+\tab       id = i; \par
+\tab    \} \par
+\tab    @Override public String toString() \{     \par
+\tab       return ("Student[ "+"Name:"+this.getName()+             \par
+\tab               " Age: "+ this.getAge() +                     \par
+\tab               " Id: "+ this.getId()+"]"); \par
+\tab    \}\par
+\tab\}\par
+\f0\par
+
+\pard\sl240\slmult1\cf3\b\f1 package\cf4\b0  com.sonata.Day4Assignments;\cf0\par
+\par
+\cf3\b import\cf4\b0  java.util.ArrayList;\cf0\par
+\cf3\b import\cf4\b0  java.util.List;\cf0\par
+\par
+\cf3\b public\cf4\b0  \cf3\b class\cf4\b0  Example \{\cf0\par
+\cf4\tab\tab    \cf3\b public\cf4\b0  \cf3\b static\cf4\b0  \cf3\b void\cf4\b0  main(String[] \cf5 args\cf4 ) \{\cf0\par
+\cf4\tab\tab       List<Student> \cf5 studentlist\cf4  = \cf3\b new\cf4\b0  ArrayList<Student>();\cf0\par
+\cf4\tab\tab       \cf5 studentlist\cf4 .add(\cf3\b new\cf4\b0  Student(\cf6 "\f2\lang1033 kalyani\f1\lang9 "\cf4 , 22, 1001)); \cf0\par
+\cf4\tab\tab       \cf5 studentlist\cf4 .add(\cf3\b new\cf4\b0  Student(\cf6 "\f2\lang1033 bheem\f1\lang9 "\cf4 , 19, 1003)); \cf0\par
+\cf4\tab\tab       \cf5 studentlist\cf4 .add(\cf3\b new\cf4\b0  Student(\cf6 "\f2\lang1033 chutki\f1\lang9 "\cf4 , 23, 1005)); \cf0\par
+\cf4\tab\tab       \cf5 studentlist\cf4 .add(\cf3\b new\cf4\b0  Student(\cf6 "\f2\lang1033 raju\f1\lang9 "\cf4 , 20, 1010)); \cf0\par
+\cf4\tab\tab       \cf5 studentlist\cf4 .add(\cf3\b new\cf4\b0  Student(\cf6 "\f2\lang1033 jaggu\f1\lang9 "\cf4 , 18, 1111));\cf0\par
+\cf4\tab\tab       System.\cf7\b\i out\cf4\b0\i0 .println(\cf6 "Before Sorting the student data:"\cf4 ); \cf0\par
+\cf4\tab\tab  \cf0\par
+\cf4\tab\tab       \cf8 //java 8 forEach for printing the list \cf0\par
+\cf4\tab\tab       \cf5 studentlist\cf4 .forEach((\cf5 s\cf4 )->System.\cf7\b\i out\cf4\b0\i0 .println(\cf5 s\cf4 ));\cf0\par
+\par
+\cf4\tab\tab       System.\cf7\b\i out\cf4\b0\i0 .println(\cf6 "After Sorting the student data by Age:"\cf4 ); \cf0\par
+\par
+\cf4\tab\tab       \cf8 //Lambda expression for sorting by age \cf0\par
+\cf4\tab\tab       \cf5 studentlist\cf4 .sort((Student \cf5 s1\cf4 , Student \cf5 s2\cf4 )->\cf5 s2\cf4 .getAge()-\cf5 s1\cf4 .getAge()); \cf0\par
+\par
+\cf4\tab\tab       \cf8 //java 8 forEach for printing the list\cf0\par
+\cf4\tab\tab       \cf5 studentlist\cf4 .forEach((\cf5 s\cf4 )->System.\cf7\b\i out\cf4\b0\i0 .println(\cf5 s\cf4 ));         \cf0\par
+\par
+\cf4\tab\tab       \cf0\par
+\cf4\tab\tab    \}\cf0\par
+\par
+
+\pard\sl240\slmult1\tx780\cf4\tab\}\par
+\par
+\par
+\cf2\f0\fs22\par
+
+\pard\sa200\sl276\slmult1\cf0\par
+}
+ 

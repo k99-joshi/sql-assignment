@@ -1,0 +1,170 @@
+{\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Cambria;}{\f1\fnil Consolas;}{\f2\fnil\fcharset0 Calibri;}}
+{\colortbl ;\red255\green0\blue0;\red127\green0\blue85;\red0\green0\blue0;\red0\green0\blue192;\red63\green127\blue95;\red106\green62\blue62;\red42\green0\blue255;\red212\green212\blue212;\red127\green159\blue191;\red100\green100\blue100;}
+{\*\generator Riched20 10.0.19041}\viewkind4\uc1 
+\pard\sa200\sl276\slmult1\cf1\f0\fs24\lang9 Create a Employee class with below properties and methods empId, empName,empSal and public void display()\{\} , public void salCal()\{\} implement the inheritance & polymorphism functionality for Manager ,Developer, Tester class override the SalCal function.\par
+\cf2\b\f1\fs20 package\cf3\b0  com.sonata.Day3Assignments;\cf0\par
+\cf2\b public\cf3\b0  \cf2\b class\cf3\b0  Employee \{\cf0\par
+\cf3\tab\cf2\b int\cf3\b0  \cf4 eid\cf3 ;\cf0\par
+\cf3\tab String \cf4 ename\cf3 ;\cf0\par
+\cf3\tab\cf2\b double\cf3\b0  \cf4 esal\cf3 ;\cf0\par
+\cf3\tab Employee()\{\}\cf5 //empty constructor\cf0\par
+\cf3\tab Employee(\cf2\b int\cf3\b0  \cf6 a\cf3 ,String \cf6 b\cf3 )\{\cf0\par
+\cf3\tab\tab\cf5 //constructor with 3 parameters \cf0\par
+\cf3\tab\tab\cf2\b this\cf3\b0 .\cf4 eid\cf3 =\cf6 a\cf3 ;\cf0\par
+\cf3\tab\tab\cf2\b this\cf3\b0 .\cf4 ename\cf3 =\cf6 b\cf3 ;\cf0\par
+\cf3\tab\}\tab\tab\cf0\par
+\cf3\tab\cf2\b public\cf3\b0  \cf2\b double\cf3\b0  salCal(\cf2\b int\cf3\b0  \cf6 a\cf3 ) \{\cf0\par
+\cf3\tab\tab\cf2\b this\cf3\b0 .\cf4 esal\cf3 =\cf6 a\cf3 ;\cf0\par
+\cf3\tab\tab\cf2\b return\cf3\b0  \cf2\b this\cf3\b0 .\cf4 esal\cf3 ;\cf0\par
+\cf3\tab\}\cf0\par
+\cf3\tab\cf2\b public\cf3\b0  \cf2\b void\cf3\b0  display() \{\cf0\par
+\cf3\tab\tab System.\cf4\b\i out\cf3\b0\i0 .println(\cf7 "Emp Id : "\cf3 +\cf4 eid\cf3 );\cf0\par
+\cf3\tab\tab System.\cf4\b\i out\cf3\b0\i0 .println(\cf7 "Emp Name : "\cf3 +\cf4 ename\cf3 );\cf0\par
+\cf3\tab\tab System.\cf4\b\i out\cf3\b0\i0 .println(\cf7 "Emp Sal : "\cf3 +\cf4 esal\cf3 );\tab\cf0\par
+\cf3\tab\tab System.\cf4\b\i out\cf3\b0\i0 .println();\cf0\par
+\cf3\tab\}\cf0\par
+\cf3\tab\cf2\b public\cf3\b0  \cf2\b static\cf3\b0  \cf2\b void\cf3\b0  main(String[] \cf6 args\cf3 ) \{\cf0\par
+\cf3\tab\tab\cf0\par
+\cf3\tab\tab Employee \cf6 e1\cf3 = \cf2\b new\cf3\b0  Employee(101,\cf7 "kalyani"\cf3 );\cf0\par
+\cf3\tab\tab\cf6 e1\cf3 .salCal(10000);\cf0\par
+\cf3\tab\tab\cf6 e1\cf3 .display();\tab\cf0\par
+\cf3\tab\}\cf0\par
+\cf3\}\par
+\cf2\b package\cf3\b0  com.sonata.Day3Assignments;\cf0\par
+\cf2\b public\cf3\b0  \cf2\b class\cf3\b0  \highlight8 Developer\highlight0  \cf2\b extends\cf3\b0  Employee\{\cf0\par
+\cf3\tab Developer(\cf2\b int\cf3\b0  \cf6 a\cf3 ,String \cf6 b\cf3 )\{\cf0\par
+\cf3\tab\tab\cf5 //constructor with 3 parameters \cf0\par
+\cf3\tab\tab\cf2\b this\cf3\b0 .\cf4 eid\cf3 =\cf6 a\cf3 ;\cf0\par
+\cf3\tab\tab\cf2\b this\cf3\b0 .\cf4 ename\cf3 =\cf6 b\cf3 ;\cf0\par
+\cf3\tab\}\cf0\par
+\cf3\tab\cf2\b public\cf3\b0  \cf2\b double\cf3\b0  salCal(\cf2\b int\cf3\b0  \cf6 a\cf3 ) \{\cf0\par
+\cf3\tab\tab\cf2\b this\cf3\b0 .\cf4 esal\cf3 =\cf6 a\cf3 *1.2;\cf0\par
+\cf3\tab\tab\cf2\b return\cf3\b0  \cf2\b this\cf3\b0 .\cf4 esal\cf3 ;\cf0\par
+\cf3\tab\}\cf0\par
+\cf3\tab\cf2\b public\cf3\b0  \cf2\b static\cf3\b0  \cf2\b void\cf3\b0  main(String[] \cf6 args\cf3 ) \{\cf0\par
+\cf3\tab\tab\cf5 // \cf9\b TODO\cf5\b0  Auto-generated method stub\cf0\par
+\cf3\tab\tab\highlight8 Developer\highlight0  \cf6 e1\cf3 = \cf2\b new\cf3\b0  \highlight8 Developer\highlight0 (101,\cf7 "kalyani"\cf3 );\cf0\par
+\cf3\tab\tab\cf6 e1\cf3 .salCal(10000);\cf0\par
+\cf3\tab\tab\cf6 e1\cf3 .display();\cf0\par
+\cf3\tab\}\cf0\par
+\cf3\}\par
+\cf2\b package\cf3\b0  com.sonata.Day3Assignments;\cf0\par
+\cf2\b public\cf3\b0  \cf2\b class\cf3\b0  Manager \cf2\b extends\cf3\b0  Employee \{\cf0\par
+\cf3\tab Manager(\cf2\b int\cf3\b0  \cf6 a\cf3 ,String \cf6 b\cf3 )\{\cf0\par
+\cf3\tab\tab\cf5 //constructor with 3 parameters \cf0\par
+\cf3\tab\tab\cf2\b this\cf3\b0 .\cf4 eid\cf3 =\cf6 a\cf3 ;\cf0\par
+\cf3\tab\tab\cf2\b this\cf3\b0 .\cf4 ename\cf3 =\cf6 b\cf3 ;\cf0\par
+\cf3\tab\}\cf0\par
+\cf3\tab\cf2\b public\cf3\b0  \cf2\b double\cf3\b0  salCal(\cf2\b int\cf3\b0  \cf6 a\cf3 ) \{\cf0\par
+\cf3\tab\tab\cf2\b this\cf3\b0 .\cf4 esal\cf3 =\cf6 a\cf3 *1.18;\cf0\par
+\cf3\tab\tab\cf2\b return\cf3\b0  \cf2\b this\cf3\b0 .\cf4 esal\cf3 ;\cf0\par
+\cf3\tab\}\cf0\par
+\cf3\tab\cf2\b public\cf3\b0  \cf2\b static\cf3\b0  \cf2\b void\cf3\b0  main(String[] \cf6 args\cf3 ) \{\cf0\par
+\cf3\tab\tab\cf5 // \cf9\b TODO\cf5\b0  Auto-generated method stub\cf0\par
+\cf3\tab\tab Manager \cf6 e1\cf3 = \cf2\b new\cf3\b0  Manager(101,\cf7 "kalyani"\cf3 );\cf0\par
+\cf3\tab\tab\cf6 e1\cf3 .salCal(10000);\cf0\par
+\cf3\tab\tab\cf6 e1\cf3 .display();\cf0\par
+\cf3\tab\}\cf0\par
+\cf3\}\par
+\cf2\b package\cf3\b0  com.sonata.Day3Assignments;\cf0\par
+\cf2\b public\cf3\b0  \cf2\b class\cf3\b0  Tester \cf2\b extends\cf3\b0  Employee\{\cf0\par
+\cf3\tab Tester(\cf2\b int\cf3\b0  \cf6 a\cf3 ,String \cf6 b\cf3 )\{\cf0\par
+\cf3\tab\tab\cf5 //constructor with 3 parameters \cf0\par
+\cf3\tab\tab\cf2\b this\cf3\b0 .\cf4 eid\cf3 =\cf6 a\cf3 ;\cf0\par
+\cf3\tab\tab\cf2\b this\cf3\b0 .\cf4 ename\cf3 =\cf6 b\cf3 ;\cf0\par
+\cf3\tab\}\cf0\par
+\cf3\tab\cf2\b public\cf3\b0  \cf2\b double\cf3\b0  salCal(\cf2\b int\cf3\b0  \cf6 a\cf3 ) \{\cf0\par
+\cf3\tab\tab\cf2\b this\cf3\b0 .\cf4 esal\cf3 =\cf6 a\cf3 *1.1;\cf0\par
+\cf3\tab\tab\cf2\b return\cf3\b0  \cf2\b this\cf3\b0 .\cf4 esal\cf3 ;\cf0\par
+\cf3\tab\}\cf0\par
+\cf3\tab\cf2\b public\cf3\b0  \cf2\b static\cf3\b0  \cf2\b void\cf3\b0  main(String[] \cf6 args\cf3 ) \{\cf0\par
+\cf3\tab\tab\cf5 // \cf9\b TODO\cf5\b0  Auto-generated method stub\cf0\par
+\cf3\tab\tab Tester \cf6 e1\cf3 = \cf2\b new\cf3\b0  Tester(101,\cf7 "kalyani"\cf3 );\cf0\par
+\cf3\tab\tab\cf6 e1\cf3 .salCal(10000);\cf0\par
+\cf3\tab\tab\cf6 e1\cf3 .display();\cf0\par
+\cf3\tab\}\cf0\par
+\cf3\}\par
+\par
+\cf1\f0\fs24 Create a Shape class to draw a diagram like rectangle, square, triangle , with same properties like length , height, width and calculate the area  of it by overriding the method in respective class.\par
+\cf2\b\f1\fs20 package\cf3\b0  com.sonata.Day3Assignments;\cf0\par
+\cf2\b public\cf3\b0  \cf2\b class\cf3\b0  Shape \{\cf0\par
+\cf3\tab\cf2\b double\cf3\b0  \cf4 length\cf3 ;\cf0\par
+\cf3\tab\cf2\b double\cf3\b0  \cf4 height\cf3 ;\cf0\par
+\cf3\tab\cf2\b double\cf3\b0  \cf4 width\cf3 ;\cf0\par
+\cf3\tab\cf2\b public\cf3\b0  \cf2\b double\cf3\b0  area() \{\cf0\par
+\cf3\tab\tab\cf2\b return\cf3\b0  \cf4 length\cf3 *\cf4 height\cf3 ;\cf0\par
+\cf3\tab\}\tab  \cf0\par
+\cf3  \}\par
+\cf2\b package\cf3\b0  com.sonata.Day3Assignments;\cf0\par
+\cf2\b public\cf3\b0  \cf2\b class\cf3\b0  Rectangle \cf2\b extends\cf3\b0  Shape\{\cf0\par
+\cf3\tab\cf0\par
+\cf3\tab\cf10 @Override\cf0\par
+\cf3\tab\cf2\b public\cf3\b0  \cf2\b double\cf3\b0  area() \{\cf0\par
+\cf3\tab\tab\cf2\b return\cf3\b0  \cf4 length\cf3 *\cf4 width\cf3 ;\cf0\par
+\cf3\tab\}\cf0\par
+\cf3\tab Rectangle(\cf2\b double\cf3\b0  \cf6 l\cf3 , \cf2\b double\cf3\b0  \cf6 w\cf3 )\{\cf0\par
+\cf3\tab\tab\cf2\b this\cf3\b0 .\cf4 length\cf3  =\cf6 l\cf3 ;\cf0\par
+\cf3\tab\tab\cf2\b this\cf3\b0 .\cf4 width\cf3  = \cf6 w\cf3 ;\cf0\par
+\cf3\tab\}\cf0\par
+\cf3\tab\cf2\b public\cf3\b0  \cf2\b static\cf3\b0  \cf2\b void\cf3\b0  main(String[]\cf6 args\cf3 ) \{\cf0\par
+\cf3\tab\tab Rectangle \cf6 r1\cf3  = \cf2\b new\cf3\b0  Rectangle(5.5,6);\cf0\par
+\cf3\tab\tab System.\cf4\b\i out\cf3\b0\i0 .println(\cf7 "area of rectangle : "\cf3 +\cf6 r1\cf3 .area());\cf0\par
+\cf3\tab\}\cf0\par
+\cf3\}\par
+\cf2\b package\cf3\b0  com.sonata.Day3Assignments;\cf0\par
+\cf2\b public\cf3\b0  \cf2\b class\cf3\b0  Square \cf2\b extends\cf3\b0  Shape \{\cf0\par
+\par
+\cf3\tab\cf10 @Override\cf0\par
+\cf3\tab\cf2\b public\cf3\b0  \cf2\b double\cf3\b0  area() \{\cf0\par
+\cf3\tab\tab\cf2\b return\cf3\b0  \cf4 length\cf3 *\cf4 length\cf3 ;\cf0\par
+\cf3\tab\}\cf0\par
+\cf3\tab Square(\cf2\b double\cf3\b0  \cf6 l\cf3 )\{\cf0\par
+\cf3\tab\tab\cf2\b this\cf3\b0 .\cf4 length\cf3  = \cf6 l\cf3 ;\cf0\par
+\cf3\tab\}\cf0\par
+\cf3\tab\cf2\b public\cf3\b0  \cf2\b static\cf3\b0  \cf2\b void\cf3\b0  main(String[]\cf6 args\cf3 ) \{\cf0\par
+\cf3\tab\tab Square \cf6 s1\cf3  = \cf2\b new\cf3\b0  Square(10);\cf0\par
+\cf3\tab\tab System.\cf4\b\i out\cf3\b0\i0 .println(\cf7 "area of square : "\cf3 +\cf6 s1\cf3 .area());\cf0\par
+\cf3\tab\}\cf0\par
+\cf3\}\par
+
+\pard\sl240\slmult1\cf1\f2\fs22 Create a custom exceptions to handle when the yearly salary of an employee is less than \par
+
+\pard\li720\sl240\slmult1 1,00,000.\par
+\par
+\cf2\b\f1\fs20 package\cf3\b0  com.sonata.Day3Assignments;\cf0\par
+\par
+\cf10 @SuppressWarnings\cf3 (\cf7 "serial"\cf3 )\cf0\par
+\cf2\b public\cf3\b0  \cf2\b class\cf3\b0  CustomException \cf2\b extends\cf3\b0  Exception\{\cf0\par
+\cf3\tab\cf2\b double\cf3\b0  \cf4 empsal\cf3 ;\cf0\par
+\cf3\tab CustomException(String \cf6 s\cf3 )\{\cf0\par
+\cf3\tab\tab\cf2\b super\cf3\b0 (\cf6 s\cf3 );\cf0\par
+\cf3\tab\}\cf0\par
+\cf3\tab CustomException()\{\}\cf0\par
+\cf3\tab\cf0\par
+\cf3\tab\cf2\b public\cf3\b0  \cf2\b void\cf3\b0  \highlight8 display\highlight0 () \cf2\b throws\cf3\b0  CustomException \{\cf0\par
+\cf3\tab\tab\cf2\b if\cf3\b0 (\cf4 empsal\cf3  < 100000) \{\cf0\par
+\cf3\tab\tab\tab\cf2\b throw\cf3\b0  \cf2\b new\cf3\b0  CustomException(\cf7 "employee salary is less than 100000"\cf3 );\cf0\par
+\cf3\tab\tab\}\cf0\par
+\cf3\tab\tab\cf2\b else\cf3\b0  \{\cf0\par
+\cf3\tab\tab\tab System.\cf4\b\i out\cf3\b0\i0 .println(\cf7 "Congratulations. Employee salary is above 100000"\cf3 );\cf0\par
+\cf3\tab\tab\}\cf0\par
+\cf3\tab\}\cf0\par
+\cf3\tab\cf2\b public\cf3\b0  \cf2\b static\cf3\b0  \cf2\b void\cf3\b0  main(String[]\cf6 args\cf3 ) \cf2\b throws\cf3\b0  CustomException\{\cf0\par
+\cf3\tab\tab CustomException \cf6 e\cf3  = \cf2\b new\cf3\b0  CustomException();\cf0\par
+\cf3\tab\tab\cf6 e\cf3 .\cf4 empsal\cf3  = 178974;\cf0\par
+\cf3\tab\tab\cf6 e\cf3 .\highlight8 display\highlight0 ();\cf0\par
+\cf3\tab\}\cf0\par
+\cf3\tab\cf0\par
+\par
+\cf3\}\par
+\par
+\cf1\f2\fs22\par
+\par
+
+\pard\sa200\sl276\slmult1\cf0\f1\fs20\par
+\cf1\f0\fs24\par
+\par
+\cf0\fs28\par
+\cf1\f2\fs24\par
+}
+ 
