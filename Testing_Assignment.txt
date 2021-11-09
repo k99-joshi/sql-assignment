@@ -1,0 +1,199 @@
+scenerio="Leave Tracking System":-
+
+1.type of issue-health
+
+2.from(LB=03/04/2008) - 03/04/2008,first half
+	lb+1=04/04/2008 -pass
+	lb-1=02/04/2008 -fail
+	lb=03/04/2008   -pass
+							-->pass(sanction)
+
+3.to(UB=05/04/2008)-04/04/2008-first half
+	ub+1=06/04/2008 -fail
+	ub-1=04/04/2008 -pass
+	ub=05/04/2008   -pass
+
+4.reason-xyz
+
+
+
+1.type of issue-casual
+
+2.from(LBC03/04/2008) - 04/04/2008,second half
+	lb+1=04/04/2008 -pass
+	lb-1=02/04/2008 -fail
+	lb=03/04/2008   -pass
+							-->pass(sanction)
+
+3.to(UBC=05/04/2008)-05/04/2008-first half
+	ub+1=06/04/2008 -fail
+	ub-1=04/04/2008 -pass
+	ub=05/04/2008   -pass
+
+4.reason-xyz
+
+1.type of issue-health
+
+2.from(LB=03/04/2008) - 03/04/2008,first half
+	lb+1=04/04/2008 -pass
+	lb-1=02/04/2008 -fail
+	lb=03/04/2008   -pass
+							-->fail(not sanction)
+
+3.to(UBC=05/04/2008)-07/04/2008-first half
+	ubc+1=06/04/2008 -fail
+	ubc-1=04/04/2008 -pass
+	ubc=05/04/2008   -pass
+
+4.reason-xyz
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+scenerio="HR-CONNECT":-
+
+1)project/dept - D&A
+
+2)location- BLR
+
+3)Extn -1234
+
+4)Expected completion(LB=10/11/2021,applying date) - 11/11/2021
+	LB-1=09/11/2021 -fail
+	LB  =10/11/2021 -pass
+	LB+1=11/11/2021 -pass
+								--> Fail(1)
+	UB-1=12/11/2021 -pass
+	UB  =13/11/2021 -pass
+	UB+1=14/11/2021 -fail
+
+5)Reporting manager -jayashree
+
+6)issue- asjsssxh	
+
+
+
+1)project/dept - Data and Analytics
+
+2)location- BLR
+
+3)Extn -1234
+
+4)Expected completion(LB=10/11/2021,applying date) - 11/11/2021
+	LB-1=09/11/2021 -fail
+	LB  =10/11/2021 -pass
+	LB+1=11/11/2021 -pass
+								--> Pass
+	UB-1=12/11/2021 -pass
+	UB  =13/11/2021 -pass
+	UB+1=14/11/2021 -fail
+
+5)Reporting manager -jayashree
+
+6)issue- asjsssxh	
+
+
+
+1)project/dept - D&A
+
+2)location- BLR
+
+3)Extn -1234
+
+4)Expected completion(LB=10/11/2021,applying date) - 11/11/2021
+	LB-1=09/11/2021 -fail
+	LB  =10/11/2021 -pass
+	LB+1=11/11/2021 -pass
+								--> Fail(5)
+	UB-1=12/11/2021 -pass
+	UB  =13/11/2021 -pass
+	UB+1=14/11/2021 -fail
+
+5)Reporting manager -jayashree123
+
+6)issue- asjsssxh	
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+scenerio="Request in MRBS":-
+
+1)Group/project -ABC123
+
+2)Location-selected
+
+3)preferred room-selected
+
+4)Additional req - Lunch
+
+5)No of Participants - 1
+	LB-1=0 -fail
+	LB  =1-pass
+	LB+1=2-pass
+								-->Fail(8)
+	UB-1=2 -pass
+	UB  =3-pass
+	UB+1=4-fail
+
+6)start (LB=applying date,next minute)- 10/11/2021 07:00
+
+7)End(UB=Next day, applied time) -11/11/2021 05:00
+	ULB-1=10/11/2021 22:00-pass
+	UB   =11/11/2021 07:00-pass
+	UB+1 =12/11/2021 07:00-fail
+
+8)EXTN -123
+
+
+
+1)Group/project -ABC123
+
+2)Location-selected
+
+3)preferred room-selected
+
+4)Additional req - Lunch
+
+5)No of Participants - 1
+	LB-1=0 -fail
+	LB  =1-pass
+	LB+1=2-pass
+								-->pass
+	UB-1=2 -pass
+	UB  =3-pass
+	UB+1=4-fail
+
+6)start (LB=applying date,next minute)- 10/11/2021 07:00
+
+7)End(UB=Next day, applied time) -11/11/2021 05:00
+	ULB-1=10/11/2021 22:00-pass
+	UB   =11/11/2021 07:00-pass
+	UB+1 =12/11/2021 07:00-fail
+
+8)EXTN -1234
+
+
+
+1)Group/project -ABC123
+
+2)Location-selected
+
+3)preferred room-selected
+
+4)Additional req - Lunch
+
+5)No of Participants - 4
+	LB-1=0 -fail
+	LB  =1-pass
+	LB+1=2-pass
+								-->Fail(5)
+	UB-1=2 -pass
+	UB  =3-pass
+	UB+1=4-fail
+
+6)start (LB=applying date,next minute)- 10/11/2021 07:00
+
+7)End(UB=Next day, applied time) -11/11/2021 05:00
+	ULB-1=10/11/2021 22:00-pass
+	UB   =11/11/2021 07:00-pass
+	UB+1 =12/11/2021 07:00-fail
+
+8)EXTN -123
+
+
+	 
